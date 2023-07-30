@@ -17,7 +17,7 @@ export const Header = () => {
     
                 {isLoggedIn && (
                 <NavLink to="/contacts">
-                    Phone Book
+                    Phone book
                 </NavLink>
                 )}
             </div>
