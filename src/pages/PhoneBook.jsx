@@ -16,22 +16,21 @@ const  PhoneBook = () => {
   }, [dispatch]);
 
   return (
-    <section>
-      <h1>Phonebook</h1>
+    <>
       <ContactForm/>
 
-      <div>
-        <h2>Contacts</h2>
-        {selectContacts().length 
-        ? (<p>Your phonebook is empty. Add your first contact</p>) 
-        : (
-          <>
-            <Filter />
-            <ContactsList />
-          </>
-        )}
-      </div>
-    </section>
+        <div>
+          <h2>Contacts</h2>
+          {selectContacts().length 
+          ? (<p>Your phonebook is empty. Add your first contact</p>) 
+          : (
+            <>
+              <Filter />
+              <ContactsList />
+            </>
+          )}
+        </div>
+    </>
   );
 }
 

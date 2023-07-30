@@ -3,7 +3,7 @@ body {
   font-family: 'Montserrat';
 
   background-color: #161616;
-  color: #ffffff;
+  color: #ffdfd5;
 }
 
 #root {
@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
 
-  margin: 20px 96px;
+  padding: 30px 120px;
 }
 
 h1,
@@ -27,33 +27,54 @@ ul {
 
 p {
   margin: 0px;
+  font-size: 20px;
 }
 
 input {
   margin: 0px 16px;
+  width: 500px;
 
   background-color: inherit;
   color: inherit;
 
   border: none;
-  border-bottom: 1px solid #9c9c9c;
+  border-bottom: 1px solid #ffdfd5;
   outline: none;
 
   font-family: inherit;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 input:hover,
 input:focus {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+
+  color: #ffdfd5;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #ff007b;
 }
 
 button {
-  border: 1px solid #9c9c9c;
+  width: 200px;
+  height: 36px;
+  margin: 20px 0px 0px 16px;
+
+  border: 1px solid #ffdfd5;
+  border-radius: 18px;
   background-color: inherit;
   color: inherit;
 
   font-family: inherit;
+  font-size: 20px;
 
   transition: all 0.3s ease;
 }
@@ -63,4 +84,10 @@ button:focus {
   background-color: #ff007b;
   color: #161616;
   border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }

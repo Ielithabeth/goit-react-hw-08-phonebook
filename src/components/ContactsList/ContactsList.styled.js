@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Item = styled.li`
 display: flex;
 gap: 8px;
-margin-bottom: 16px;
+margin: 40px 0px 16px 0px;
 
 p {
     font-weight: 600;

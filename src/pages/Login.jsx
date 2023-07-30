@@ -3,13 +3,13 @@ import { LoginForm } from '../components/LoginForm/LoginForm';
 
 const Login = () => {
   return (
-    <section>
+    <>
       <Helmet>
         <title>Login</title>
       </Helmet>
 
       <LoginForm/>
-    </section>
+    </>
   );
 }
 

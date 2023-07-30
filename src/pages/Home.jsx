@@ -1,8 +1,16 @@
+import { useAuth } from '../hooks/useAuth';
+import { Div } from './Home.styled';
+
 const Home = () => {
+    const { isLoggedIn } = useAuth();
+
     return (
-        <section>
-            <h1>Your phone book</h1>
-        </section>
+            <Div>
+                {isLoggedIn 
+                ? <p>welcome</p>
+                : <p>please register or login to continue</p>
+                }
+            </Div>
     )
 }
 

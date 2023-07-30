@@ -20,16 +20,14 @@ export const LoginForm = () => {
   return (
     <form onSubmit={handleSubmit} autoComplete="on">
       <label>
-        Email
-        <input type="email" name="email" />
+        <input type="email" name="email" placeholder='Email'/>
       </label>
 
       <label>
-        Password
-        <input type="password" name="password" />
+        <input type="password" name="password" placeholder='Password'/>
       </label>
 
-      <button type="submit">Log in</button>
+      <button type="submit">log in</button>
     </form>
   );
 };
