@@ -24,9 +24,9 @@ export const Header = () => {
 
             <div>
                 {isLoggedIn 
-                ? <button type="button" onClick={() => dispatch(logOut())}>
+                ? <NavLink onClick={() => dispatch(logOut())}>
                    Logout
-                </button> 
+                </NavLink> 
                 : <>
                     <NavLink to="/register">Register</NavLink>
                     <span>|</span>
