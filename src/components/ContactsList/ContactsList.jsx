@@ -23,13 +23,13 @@ export const ContactsList = () => {
       <ul>
         {filtredContacts.map(({ name, number, id }) => (
           <Item key={id}>
-            <p><b>{name}</b><span>{number}</span></p>
+            <p><b>{name}</b> <span>{number}</span></p>
 
             <button
               type="button"
               onClick={() => dispatch(deleteContact(id))}
             >
-              ×
+              x
             </button>
           </Item>
         ))}

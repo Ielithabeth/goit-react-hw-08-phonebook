@@ -49,7 +49,7 @@ export const ContactForm = () => {
       </label>
 
       <button type="submit">
-        Add Contact
+        add contact
       </button>
     </form>
   );
